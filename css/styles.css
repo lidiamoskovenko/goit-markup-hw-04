@@ -8,6 +8,7 @@
     --hover-color: #404BBF;
     --footer-hover-color: #31D0AA;
     --color-border: #E7E9FC;
+    --secon-color-border:#8e8f99;
 }
 
 body {
@@ -58,6 +59,7 @@ img {
 
 .header-container {
     border-bottom: 1px solid var(--color-border);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .nav-container {
@@ -212,6 +214,16 @@ img {
     display: flex;
     justify-content: space-between;
 }
+.section-two-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 264px;
+    Height: 112px;
+    background: var(--second-color-background);
+    border-radius: 4px;
+}
 
 .section-two-item {
     flex-basis: calc((100% - 72px) / 4);
@@ -265,19 +277,6 @@ img {
     color: var(--second-color-font);
 }
 
-.section-two-icon {
-    width: 264px;
-    Height: 112px;
-    padding: 24px 100px;
-    background: var(--second-color-background);
-    border-radius: 4px;
-}
-
-.section-two-icon>svg {
-    display: inline-block;
-    width: 64px;
-    Height: 64px;
-}
 
 /* Section 4 */
 .section-four-container {
@@ -313,7 +312,7 @@ img {
 }
 
 .decoration {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .section-four-name {
@@ -338,7 +337,8 @@ img {
 
 .list-icon {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 }
 
 .link-icon {
@@ -352,13 +352,13 @@ img {
     background-color: var(--main-color-link);
 }
 
-.link-icon:hover {
+.link-icon:hover,
+.link-icon:focus {
     background-color: var(--hover-color);
 }
-
-.link-icon:not(:first-child) {
-    margin-left: 24px;
-
+.link-icon > svg {
+    fill: var(--second-color-background); 
+    
 }
 
 /* Section 5 */
@@ -367,7 +367,7 @@ img {
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -377,15 +377,27 @@ img {
 .section-five-list {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .section-five-item {
     width: 168px;
     height: 88px;
 }
-
-.section-five-item:not(:first-child) {
-    margin-left: 24px;
+.section-five-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--secon-color-border);
+    border: 1px solid var(--secon-color-border);
+    border-radius: 4px;
+}
+.section-five-icon:hover,
+.section-five-icon:focus {
+color: var(--hover-color);
+border-color: var(--hover-color);
 }
 
 /* footer */
