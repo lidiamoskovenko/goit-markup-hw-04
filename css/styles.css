@@ -408,6 +408,8 @@ border-color: var(--hover-color);
 
 .footer {
     display: flex;
+    align-items: baseline;
+    gap: 120px;
 }
 
 .footer-logo {
@@ -425,10 +427,6 @@ border-color: var(--hover-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-color-background);
-}
-
-.nav-footer {
-    margin-left: 120px;
 }
 
 .nav-footer-text {
