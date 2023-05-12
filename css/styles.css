@@ -358,7 +358,7 @@ img {
     background-color: var(--hover-color);
 }
 
-.link-icon>svg {
+.icon {
     fill: var(--second-color-background);
 
 }
@@ -402,9 +402,11 @@ img {
 .section-five-icon:focus {
     border-color: var(--hover-color);
 }
-
-.section-five-icon>svg:hover,
-.section-five-icon>svg:focus {
+.icon-clients{
+    fill: currentColor
+}
+.icon-clients:hover,
+.icon-clients:focus {
     fill: var(--hover-color)
 }
 
@@ -459,7 +461,9 @@ img {
 .footer-social>a:focus {
     background-color: var(--footer-hover-color);
 }
-
+.icon-footer {
+    fill: var(--second-color-background);
+}
 /* PORTFOLIO */
 /* Section 1 */
 .portfolio-container {
