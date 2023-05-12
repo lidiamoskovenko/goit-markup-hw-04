@@ -8,7 +8,7 @@
     --hover-color: #404BBF;
     --footer-hover-color: #31D0AA;
     --color-border: #E7E9FC;
-    --secon-color-border:#8e8f99;
+    --secon-color-border: #8e8f99;
 }
 
 body {
@@ -214,6 +214,7 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
 .section-two-icon {
     display: flex;
     justify-content: center;
@@ -356,9 +357,10 @@ img {
 .link-icon:focus {
     background-color: var(--hover-color);
 }
-.link-icon > svg {
-    fill: var(--second-color-background); 
-    
+
+.link-icon>svg {
+    fill: var(--second-color-background);
+
 }
 
 /* Section 5 */
@@ -384,6 +386,7 @@ img {
     width: 168px;
     height: 88px;
 }
+
 .section-five-icon {
     display: flex;
     justify-content: center;
@@ -394,10 +397,15 @@ img {
     border: 1px solid var(--secon-color-border);
     border-radius: 4px;
 }
+
 .section-five-icon:hover,
 .section-five-icon:focus {
-color: var(--hover-color);
-border-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.section-five-icon>svg:hover,
+.section-five-icon>svg:focus {
+    fill: var(--hover-color)
 }
 
 /* footer */
@@ -409,7 +417,11 @@ border-color: var(--hover-color);
 .footer {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+}
+
+.footer-logo-container {
+    margin-right: 120px;
+    ;
 }
 
 .footer-logo {
@@ -429,17 +441,22 @@ border-color: var(--hover-color);
     color: var(--second-color-background);
 }
 
-.nav-footer-text {
+.social-footer-text {
     margin-bottom: 16px;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
     color: var(--third-color-font);
 }
 
-.footer-social:not(:first-child) {
-    margin-left: 16px;
+.social-footer>ul {
+    gap: 16px;
 }
 
-.footer-social>a:hover {
+.footer-social>a:hover,
+.footer-social>a:focus {
     background-color: var(--footer-hover-color);
 }
 
@@ -504,7 +521,12 @@ border-color: var(--hover-color);
     background: var(--third-color-font);
 }
 
-.portfolio-item:hover {
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
