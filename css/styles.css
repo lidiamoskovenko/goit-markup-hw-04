@@ -400,6 +400,7 @@ img {
 
 .section-five-icon:hover,
 .section-five-icon:focus {
+    color: var(--hover-color);
     border-color: var(--hover-color);
 }
 .icon-clients{
